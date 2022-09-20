@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/stylesheets/public/index.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Notifications</h1>
+        <span>X</span>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Notifications page</title>
-</head>
-<body>
+        <button class="markread">Mark all as read</button>
+      </header>
 
-  Notifications 3
+      <div class="notification unread">
+        <p><span class="name">Mark Webber</span> reacted to your recent post <span class="post-title">My first tournament today!</span>
+        <br />1m ago</p>
+      </div>
 
-  Mark all as read
+      <div class="notification">
+        <p><span class="name">Angela Gray</span>followed you
+        <br />5m ago</p>
+      </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <div class="notification">
+        <p><span class="name">Jacob Thompson</span> has joined your group <span class="post-title">Chess Club</span>
+        <br />1 day ago</p>
+      </div>
 
-  Angela Gray followed you
-  5m ago
+      <div class="notification">
+        <p><span class="name">Rizky Hasanuddin</span> sent you a private message
+        <br />5 days ago</p>
+      </div>
+      <!-- Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+  I'm already having lots of fun and improving my game. -->
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+      <div class="notification">
+        <p><span class="name">Kimberly Smith</span> commented on your picture
+        <br />1 week ago</p>
+      </div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+      <div class="notification">
+        <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="post-title">5 end-game strategies to
+        increase your win rate</span>
+        <br />2 weeks ago</p>
+      </div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+      <div class="notification">
+        <p><span class="name">Anna Kim</span> left the group <span class="post-title">Chess Club</span>
+        <br />2 weeks ago</p>
+      </div>
+    </div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script id="__bs_script__">
+      //<![CDATA[
+      document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>".replace(
+          "HOST",
+          location.hostname
+        )
+      );
+      //]]>
+    </script>
+  </body>
 </html>
