@@ -1,0 +1,43 @@
+@use "../variables/colors" as *;
+
+.notification {
+  background-color: $Snow;
+  width: 92%;
+  margin: 8px 0px;
+  height: 670px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  p {
+    color: $DarkGreyBlue;
+    line-height: 1.7rem;
+  }
+
+  .name {
+    color: $VeryDarkGreyBlue;
+    font-weight: 800;
+    display: inline;
+    margin-right: 0.4375rem;
+  }
+
+  .post-title {
+    font-weight: 800;
+    color: $DarkGreyBlue;
+    display: inline;
+  }
+}
+
+.unread {
+  .post-title {
+    &:after {
+      content: "";
+      height: 11px;
+      width: 11px;
+      background-color: $red;
+      border-radius: 50%;
+      display: inline-block;
+      margin-left: .375rem;
+    }
+  }
+}

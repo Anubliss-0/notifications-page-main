@@ -1,9 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 .notification {
-  color: blue;
+  background-color: #F7FAFD;
+  width: 92%;
+  margin: 8px 0px;
+  height: 670px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.notification p {
+  color: #5E6778;
+  line-height: 1.7rem;
+}
+.notification .name {
+  color: #1C202B;
+  font-weight: 800;
+  display: inline;
+  margin-right: 0.4375rem;
+}
+.notification .post-title {
+  font-weight: 800;
+  color: #5E6778;
+  display: inline;
+}
+
+.unread .post-title:after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  background-color: #F65552;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.375rem;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
-  color: red;
+  background-color: #F7FAFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  max-width: 45.625rem;
+  background-color: #ffffff;
+  height: 55.8125rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

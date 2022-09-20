@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/components/notification.scss"],"names":[],"mappings":"AAAA;EACE","file":"notification.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/components/notification.scss","../../sass/variables/_colors.scss"],"names":[],"mappings":"AAEA;EACE,kBCGM;EDFN;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE,OCJgB;EDKhB;EACA;EACA;;AAGF;EACE;EACA,OCjBY","file":"notification.css"}
