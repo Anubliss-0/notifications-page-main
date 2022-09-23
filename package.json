@@ -2,8 +2,7 @@
   "devDependencies": {
     "eslint": "^8.23.1",
     "sass": "^1.54.9",
-    "sass-loader": "^13.0.2",
-    "webpack": "^5.74.0"
+    "sass-loader": "^13.0.2"
   },
   "dependencies": {
     "browser-sync": "^2.27.10"
