@@ -4,9 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
 html * {
+  transition: 0.3s;
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0px;
 }
 
 .container {
