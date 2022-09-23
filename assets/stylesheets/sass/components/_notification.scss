@@ -4,14 +4,14 @@
   background-color: $Snow;
   width: 92%;
   margin: 8px 0px;
-  height: 670px;
+  min-height: 80px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 
   p {
     color: $DarkGreyBlue;
     line-height: 1.7rem;
+    margin-top: 20px;
   }
 
   .name {
@@ -25,6 +25,13 @@
     font-weight: 800;
     color: $DarkGreyBlue;
     display: inline;
+  }
+
+  .useravatar {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 1.25rem;
   }
 }
 
@@ -40,4 +47,14 @@
       margin-left: .375rem;
     }
   }
+}
+
+@media (max-width: 420px) {
+  .notification {
+    p {
+      font-size: 14;
+      line-height: 18px;
+    }
+  }
+
 }
