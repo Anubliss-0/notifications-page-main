@@ -1,3 +1,6 @@
+@use "../variables/colors" as *;
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -5,7 +8,45 @@ header {
 
   h1 {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 30px;
+    margin: 0px 0px;
+
+    span {
+      background-color:$blue;
+      color: white;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      padding: .0625rem .6875rem .1875rem .6875rem;
+      margin-left: .6875rem;
+      position: relative;
+      bottom: .3125rem;
+      border-radius: .375rem;
+    }
+  }
+
+  margin: 30px 0px;
+
+  button {
+    border: none;
+    background:none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: right;
+    color: $DarkGreyBlue;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media (max-wdith: 420px) {
+  header {
+    margin: 24px 0px;
+    h1 {
+      line-height: 1.5625rem;
+    }
   }
 }

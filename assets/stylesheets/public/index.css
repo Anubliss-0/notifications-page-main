@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 .notification {
-  background-color: #F7FAFD;
   width: 92%;
   margin: 8px 0px;
-  min-height: 80px;
   display: flex;
   justify-content: flex-start;
 }
@@ -17,11 +15,18 @@
   font-weight: 800;
   display: inline;
   margin-right: 0.4375rem;
+  cursor: pointer;
+}
+.notification .name:hover {
+  color: #0A327B;
 }
 .notification .post-title {
   font-weight: 800;
   color: #5E6778;
   display: inline;
+}
+.notification .post-title:hover {
+  color: #0A327B;
 }
 .notification .useravatar {
   height: 45px;
@@ -29,7 +34,15 @@
   border-radius: 50%;
   margin: 1.25rem;
 }
+.notification .noti-image {
+  margin: auto 20px auto auto;
+  height: 2.8125rem;
+  width: 2.8125rem;
+}
 
+.unread {
+  background-color: #F7FAFD;
+}
 .unread .post-title:after {
   content: "";
   height: 11px;
@@ -41,26 +54,72 @@
 }
 
 @media (max-width: 420px) {
+  .notification {
+    padding: 0rem 1.25rem;
+  }
   .notification p {
-    font-size: 14;
+    font-size: 14px;
     line-height: 18px;
+    margin-top: 0.6rem;
+  }
+  .notification .useravatar {
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    margin: 0.6rem 0.6rem 0.6rem 0rem;
+  }
+  .notification .age {
+    position: relative;
+    top: 0.1875rem;
   }
 }
 header {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin: 30px 0px;
 }
 header h1 {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
+  margin: 0px 0px;
+}
+header h1 span {
+  background-color: #0A327B;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 0.0625rem 0.6875rem 0.1875rem 0.6875rem;
+  margin-left: 0.6875rem;
+  position: relative;
+  bottom: 0.3125rem;
+  border-radius: 0.375rem;
+}
+header button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: right;
+  color: #5E6778;
+  cursor: pointer;
+}
+header button:hover {
+  color: #0A327B;
 }
 
+@media (max-wdith: 420px) {
+  header {
+    margin: 24px 0px;
+  }
+  header h1 {
+    line-height: 1.5625rem;
+  }
+}
 html * {
+  transition: 0.3s;
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
 }
 
 body {
@@ -72,6 +131,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0px;
 }
 
 .container {
