@@ -28,6 +28,7 @@
     font-weight: 800;
     color: $DarkGreyBlue;
     display: inline;
+    cursor: pointer;
 
     &:hover {
       color: $blue;
@@ -50,7 +51,7 @@
 
 .unread {
   background-color: $Snow;
-  .post-title {
+  .content{
     &:after {
       content: "";
       height: 11px;
@@ -83,6 +84,12 @@
     .age {
       position: relative;
       top: .1875rem;
+    }
+
+    .noti-image {
+      margin: auto auto auto 10px;
+      height: 2.8125rem;
+      width: 2.8125rem;
     }
   }
 

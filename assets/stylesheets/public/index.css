@@ -24,6 +24,7 @@
   font-weight: 800;
   color: #5E6778;
   display: inline;
+  cursor: pointer;
 }
 .notification .post-title:hover {
   color: #0A327B;
@@ -43,7 +44,7 @@
 .unread {
   background-color: #F7FAFD;
 }
-.unread .post-title:after {
+.unread .content:after {
   content: "";
   height: 11px;
   width: 11px;
@@ -71,6 +72,11 @@
   .notification .age {
     position: relative;
     top: 0.1875rem;
+  }
+  .notification .noti-image {
+    margin: auto auto auto 10px;
+    height: 2.8125rem;
+    width: 2.8125rem;
   }
 }
 header {
