@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Anubliss-0/notifications-page-main)
-- Live Site URL: [Add live site URL here](https://anubliss-0.github.io/notifications-page-main/)
+- Solution URL: [https://github.com/Anubliss-0/notifications-page-main](https://github.com/Anubliss-0/notifications-page-main)
+- Live Site URL: [https://anubliss-0.github.io/notifications-page-main/](https://anubliss-0.github.io/notifications-page-main/)
 
 ## My process
 
