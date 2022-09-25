@@ -1,5 +1,9 @@
 @use "../variables/colors" as *;
 
+.hidden {
+  display: none;
+}
+
 .notification {
   width: 92%;
   margin: 8px 0px;
@@ -46,6 +50,24 @@
     margin: auto 20px auto auto;
     height: 2.8125rem;
     width: 2.8125rem;
+  }
+
+  button {
+    border: none;
+    padding: .3125rem;
+    background: $blue;
+    color: white;
+    border-radius: 7px;
+    margin-left: .3125rem;
+  }
+}
+.message {
+  margin-left: 7rem;
+  padding: 0 1.25rem 1.25rem 0;
+  color: $DarkGreyBlue;
+
+  &:hover {
+    background-color: $Snow;
   }
 }
 
