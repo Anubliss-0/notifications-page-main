@@ -55,11 +55,14 @@
 
 .message {
   margin-left: 7rem;
-  padding: 0 1.25rem 1.25rem 0;
+  margin-right: 3rem;
   color: #5E6778;
 }
 .message:hover {
   background-color: #F7FAFD;
+}
+.message p {
+  margin: 20px 20px;
 }
 
 .unread {
