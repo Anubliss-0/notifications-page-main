@@ -6,3 +6,4 @@ function update() {
 window.onload = update();
 
 document.addEventListener('click', update)
+document.addEventListener('keyup', update)

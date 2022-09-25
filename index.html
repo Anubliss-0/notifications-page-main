@@ -17,10 +17,10 @@
     <div class="container">
       <header>
         <h1>Notifications<span id="counter">0</span></h1>
-        <button class="markread">Mark all as read</button>
+        <button class="markread" tabindex="0">Mark all as read</button>
       </header>
 
-      <div class="notification unread">
+      <div tabindex="0" class="notification unread" role="button">
         <img
           src="assets/images/avatar-mark-webber.webp"
           alt="user avatar"
@@ -36,7 +36,7 @@
         </p>
       </div>
 
-      <div class="notification unread">
+      <div tabindex="0" class="notification unread">
         <img
           src="assets/images/avatar-angela-gray.webp"
           alt="user avatar"
@@ -50,7 +50,7 @@
         </p>
       </div>
 
-      <div class="notification unread">
+      <div tabindex="0" class="notification unread">
         <img
           src="assets/images/avatar-jacob-thompson.webp"
           alt="user avatar"
@@ -64,7 +64,7 @@
         </p>
       </div>
 
-      <div class="notification">
+      <div tabindex="0" class="notification has-message">
         <img
           src="assets/images/avatar-rizky-hasanuddin.webp"
           alt="user avatar"
@@ -73,14 +73,15 @@
         <p>
           <span class="content">
             <span class="name">Rizky Hasanuddin</span> sent you a private
-            message </span
+            message<button>View message</button> </span
           ><br /><span class="age">5 days ago</span>
         </p>
       </div>
-      <!-- Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-  I'm already having lots of fun and improving my game. -->
-
-      <div class="notification">
+      <div class="message hidden">
+        Hello, thanks for setting up the Chess Club. I've been a member for a
+        few weeks now and I'm already having lots of fun and improving my game.
+      </div>
+      <div tabindex="0" class="notification">
         <img
           src="assets/images/avatar-kimberly-smith.webp"
           alt="user avatar"
@@ -98,7 +99,7 @@
         />
       </div>
 
-      <div class="notification">
+      <div tabindex="0" class="notification">
         <img
           src="assets/images/avatar-nathan-peterson.webp"
           alt="user avatar"
@@ -115,7 +116,7 @@
         </p>
       </div>
 
-      <div class="notification">
+      <div tabindex="0" class="notification">
         <img
           src="assets/images/avatar-anna-kim.webp"
           alt="user avatar"
@@ -132,6 +133,7 @@
 
     <script src="assets/scripts/notificationCount.js"></script>
     <script src="assets/scripts/markRead.js"></script>
+    <script src="assets/scripts/hidemessage.js"></script>
 
     <script id="__bs_script__">
       //<![CDATA[

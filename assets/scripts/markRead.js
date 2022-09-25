@@ -6,6 +6,10 @@ unreadNotifications.forEach((notification) => {
     console.log("hear ya")
     this.classList.remove('unread')
   })
+  notification.addEventListener('keyup', function() {
+    console.log("hear ya")
+    this.classList.remove('unread')
+  })
 });
 
 readAll.addEventListener('click', function() {
